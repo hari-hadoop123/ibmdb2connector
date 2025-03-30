@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    ibmdb2:
+      url: jdbc:db2://localhost:50000/DBNAME
+      user: db2user
+      password: db2password
+      driver-class-name: com.ibm.db2.jcc.DB2Driver
+      type: "org.springframework.jdbc.datasource.DriverManagerDataSource"
+    postgres:
+      url: jdbc:postgresql://localhost:5432/mywork
+      user: postgresuser
+      password: postgrespassword
+      driver-class-name: org.postgresql.Driver
+      hikari:
+        maximumPoolSize: 10
